@@ -27,7 +27,6 @@ public class CurrencyConverter {
         return oldMoneyAmount / (Double) kindsOfCurrencies.get(currencyName);
 
     }
-    // Giving me Issues
     public double convertToNewCurrency(String currencyName, double oldMoneyAmount) {
         if (currencyName != "USD") {
             return (Math.round(convertToUSD(oldMoneyAmount) * (Double) kindsOfCurrencies.get(otherName) * 100.00) / 100.00);
